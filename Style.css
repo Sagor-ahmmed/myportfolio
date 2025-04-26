@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    background-color: #45aaf2;
+    font-family: sans-serif;
+    font-style: italic;
+}
+nav .nav-logo{
+    width: 15%;
+ 
+    
+}
+
+nav .nav-logo img{
+    width: 100%;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+nav .nav-title{
+    margin: 2% 0px;
+}
+
+nav .nav-link a{
+display: block;
+text-decoration: none;
+width: 200px;
+background-color: transparent;
+margin:5%;
+text-align: center;
+padding: 2%;
+color: white;
+border: 2px solid blue;
+border-radius: 30px;
+font-size: 1rem;
+transition: 0.5s all;
+}
+nav .nav-link a:hover{
+    background-color: #9c88ff;
+    border: 2px solid#9c88ff
+    
+}
+
+
+
+
+    /* ******Baner tart here****** */
+    .banner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 10%;
+        position: relative;
+    }
+
+     img{
+        width: 4rem;
+    }
+    .banner .top-img img{
+        position: absolute;
+        right: 5%;
+        top: 8%;
+        transition: 1s all;
+    }
+    .banner .banner-content{
+        color: #2d4e66;
+        text-align: center;
+        margin: 30px auto;
+        font-style: italic;
+        font-size: bolder;
+    }
+    .banner .bottom-img img{
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+        transition: 1s all;
+        
+    }
+
+    .banner .bottom-img img:hover{
+        transform: rotate(360deg);
+    }
+    .banner .top-img img:hover{
+        transform: rotate(-360deg);
+    }
+      /* ******Banner ends here******/
+      footer{
+        padding: 1rem;
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-style: italic;
+      }
+
+
+
+      .skills-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    margin: 2% 20%;
+    border: 2px solid blue;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #9c88ff;
+    color: white;
+   
+}
+.card:hover{
+    box-shadow: 1px 1px 15px rgb(240, 158, 158);
+}
+.card .card-img {
+    width: 120px;
+    height: 120px;
+}
+.card .card-img img{
+    width: 100%;
+    height: 50%;
+    border-radius: 50%;
+    border: px solid white;
+}
+
+
+
+     
+.card-title h2{
+    background-color: black;
+    margin: 0px 3%;
+    padding: 1%;
+    border-radius: 20px;
+}
+.card-title p{
+    text-align: center;
+    margin: 2%;
+    font-size: 1.2rem;
+}
+
+.myskills{
+display: flex;
+justify-content: center;
+margin: 10%;
+
+
+}
+.myskills ol{
+    list-style-type: none;
+    display: block;
+    
+}
+.myskills ol li{
+margin-top: 20px;
+font-size: bolder;
+position: relative;
+}
+
+
+ ol >li::before{
+    content: "";
+    width: 200%;
+    height: 10px;
+    background-color: rgb(164, 164, 254);
+    border-radius: 20px;
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 0;
+   
+}
+@keyframes CSS{
+    to{
+        width: 180%;
+    }
+}
+li.CSS::after{
+    animation-name: CSS;
+}
+
+
+@keyframes html{
+    to{
+        width: 190%;
+    }
+}
+li.html::after{
+    animation-name: html;
+}
+
+
+@keyframes Taliwind{
+    to{
+        width: 185%;
+    }
+}
+li.Taliwind::after{
+    animation-name: Taliwind;
+}
+
+@keyframes JS{
+    to{
+        width: 160%;
+    }
+}
+li.Js::after{
+    animation-name: JS;
+}
+
+@keyframes React{
+    to{
+        width: 190%;
+    }
+}
+li.React::after{
+    animation-name:React;
+}
+
+@keyframes Express{
+    to{
+        width: 140%;
+    }
+}
+li.Express::after{
+    animation-name:Express;
+}
+
+@keyframes React{
+    to{
+        width: 190%;
+    }
+}
+li.Mongodb::after{
+    animation-name:React;
+}
+
+@keyframes React{
+    to{
+        width: 190%;
+    }
+}
+li.Node::after{
+    animation-name:React;
+}
+
+ol >li::after{
+    content: "";
+    width: 0px;
+    height: 10px;
+    background-color: rgb(23, 23, 231);
+    border-radius: 20px;
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 0;
+   animation-duration: 2s;
+   animation-iteration-count: 5;
+   animation-delay: 1s;
+}
+
+
+
+/* ......about me section start.... */
+.about-me{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #f8a5c2;
+margin-top: 1%;
+  
+
+    
+}
+
+.about-me .about-dec{
+    margin: 5%;
+  
+    
+}
+.about-me .about-dec hr{
+    width: 20%;
+    margin: 0 auto;
+    border: 5px dotted white;
+    border-bottom: none;
+  
+}
+.about-me .about-dec span{
+   font-size: 1.5rem
+}
+.about-me .about-dec h2,h3{
+    color: white;
+    font-style: italic;
+    display: block;
+}
+.about-img img{
+width: 300px;
+height: 300px;
+border: 3px solid white;
+border-radius: 50%;
+opacity: .6;
+}
+.about-img img:hover{
+    opacity: 1;
+}
+
+
+    
+
+
+
+/* ......about me section end.... */
+

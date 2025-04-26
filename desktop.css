@@ -1,0 +1,63 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    padding: 1%;
+    background-color: #45aaf2;
+    font-family: sans-serif;
+    font-style: italic;
+}
+nav .nav-logo{
+    width: 5%;
+ 
+    
+}
+
+nav .nav-link{
+    display: flex;
+}
+nav .nav-link a{
+   padding: 1%;
+    }
+
+
+
+    /* ******Baner tart here****** */
+    img{
+      width: 6rem;
+  }
+
+
+      /* ******Banner ends here******/
+    
+      .skills-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: center;
+        grid-gap: 1%;
+      } 
+      .card{
+        margin: 5%;
+      }
+      /* ******navbar ENds Here************/
+
+
+
+        /* ******navbar ENds Here************/
+        .about-me{
+          flex-direction: row;
+        }
+        .about-dec{
+          flex: 1;
+        }
+         .about-img{
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+       
+       }
+        
+       
+      /* ******navbar ENds Here************/
